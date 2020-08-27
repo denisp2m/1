@@ -1,0 +1,318 @@
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/mootools/1.6.0/mootools.min.js"></script>
+
+
+<script>
+	var Discount12=new Array();Discount12[5]=13;Discount12[10]=12;Discount12[20]=11;Discount12[30]=10;Discount12[40]=9;Discount12[50]=8;Discount12[100]=6;Discount12[250]=5;Discount12[500]=4;Discount12[1000]=3;var Discount3=new Array();Discount3[100]=15;Discount3[200]=15;Discount3[300]=15;Discount3[500]=14;Discount3[1000]=13;Discount3[2000]=12;Discount3[3000]=11;Discount3[4000]=11;Discount3[5000]=10;var arrMaikaP=new Array();arrMaikaP[1]=new Array();arrMaikaP[1][10]=238.5;arrMaikaP[1][20]=218.95;arrMaikaP[1][30]=208.6;arrMaikaP[1][40]=199.8;arrMaikaP[1][50]=191.1;arrMaikaP[1][100]=181.25;arrMaikaP[1][250]=174;arrMaikaP[1][500]=166.75;arrMaikaP[1][1000]=159.5;arrMaikaP[2]=new Array();arrMaikaP[2][10]=238.5;arrMaikaP[2][20]=218.95;arrMaikaP[2][30]=208.6;arrMaikaP[2][40]=199.8;arrMaikaP[2][50]=191.1;arrMaikaP[2][100]=181.25;arrMaikaP[2][250]=174;arrMaikaP[2][500]=166.75;arrMaikaP[2][1000]=159.5;arrMaikaP[3]=new Array();arrMaikaP[3][10]=0;arrMaikaP[3][20]=223.3;arrMaikaP[3][30]=212.8;arrMaikaP[3][40]=203.85;arrMaikaP[3][50]=195;arrMaikaP[3][100]=185;arrMaikaP[3][250]=177.6;arrMaikaP[3][500]=170.2;arrMaikaP[3][1000]=162.8;arrMaikaP[4]=new Array();arrMaikaP[4][10]=0;arrMaikaP[4][20]=227.65;arrMaikaP[4][30]=217;arrMaikaP[4][40]=207.9;arrMaikaP[4][50]=198.9;arrMaikaP[4][100]=188.75;arrMaikaP[4][250]=181.2;arrMaikaP[4][500]=173.65;arrMaikaP[4][1000]=166.1;var arrFleksoP_high=new Array();arrFleksoP_high[1]=new Array();arrFleksoP_high[1][5]=288;arrFleksoP_high[1][10]=235.5;arrFleksoP_high[1][20]=227.65;arrFleksoP_high[1][30]=217;arrFleksoP_high[1][40]=209.25;arrFleksoP_high[1][50]=198.9;arrFleksoP_high[1][100]=191.25;arrFleksoP_high[1][250]=183.6;arrFleksoP_high[1][500]=174.8;arrFleksoP_high[1][1000]=166.1;arrFleksoP_high[2]=new Array();arrFleksoP_high[2][5]=288;arrFleksoP_high[2][10]=235.5;arrFleksoP_high[2][20]=227.65;arrFleksoP_high[2][30]=217;arrFleksoP_high[2][40]=209.25;arrFleksoP_high[2][50]=198.9;arrFleksoP_high[2][100]=191.25;arrFleksoP_high[2][250]=183.6;arrFleksoP_high[2][500]=174.8;arrFleksoP_high[2][1000]=166.1;arrFleksoP_high[3]=new Array();arrFleksoP_high[3][5]=0;arrFleksoP_high[3][10]=240;arrFleksoP_high[3][20]=232;arrFleksoP_high[3][30]=221.2;arrFleksoP_high[3][40]=213.3;arrFleksoP_high[3][50]=202.8;arrFleksoP_high[3][100]=195;arrFleksoP_high[3][250]=187.2;arrFleksoP_high[3][500]=178.25;arrFleksoP_high[3][1000]=169.4;arrFleksoP_high[4]=new Array();arrFleksoP_high[4][5]=0;arrFleksoP_high[4][10]=244.5;arrFleksoP_high[4][20]=236.35;arrFleksoP_high[4][30]=225.4;arrFleksoP_high[4][40]=217.35;arrFleksoP_high[4][50]=206.7;arrFleksoP_high[4][100]=198.75;arrFleksoP_high[4][250]=190.8;arrFleksoP_high[4][500]=181.7;arrFleksoP_high[4][1000]=172.7;var arrFleksoP_low=new Array();arrFleksoP_low[1]=new Array();arrFleksoP_low[1][5]=276.8;arrFleksoP_low[1][10]=231;arrFleksoP_low[1][20]=223.3;arrFleksoP_low[1][30]=212.8;arrFleksoP_low[1][40]=205.2;arrFleksoP_low[1][50]=195;arrFleksoP_low[1][100]=187.5;arrFleksoP_low[1][250]=180;arrFleksoP_low[1][500]=171.35;arrFleksoP_low[1][1000]=162.8;arrFleksoP_low[2]=new Array();arrFleksoP_low[2][5]=276.8;arrFleksoP_low[2][10]=231;arrFleksoP_low[2][20]=223.3;arrFleksoP_low[2][30]=212.8;arrFleksoP_low[2][40]=205.2;arrFleksoP_low[2][50]=195;arrFleksoP_low[2][100]=187.5;arrFleksoP_low[2][250]=180;arrFleksoP_low[2][500]=171.35;arrFleksoP_low[2][1000]=162.8;arrFleksoP_low[3]=new Array();arrFleksoP_low[3][5]=0;arrFleksoP_low[3][10]=235.5;arrFleksoP_low[3][20]=227.65;arrFleksoP_low[3][30]=217;arrFleksoP_low[3][40]=209.25;arrFleksoP_low[3][50]=198.9;arrFleksoP_low[3][100]=191.25;arrFleksoP_low[3][250]=183.6;arrFleksoP_low[3][500]=174.8;arrFleksoP_low[3][1000]=166.1;arrFleksoP_low[4]=new Array();arrFleksoP_low[4][5]=0;arrFleksoP_low[4][10]=240;arrFleksoP_low[4][20]=232;arrFleksoP_low[4][30]=221.2;arrFleksoP_low[4][40]=213.3;arrFleksoP_low[4][50]=202.8;arrFleksoP_low[4][100]=195;arrFleksoP_low[4][250]=187.2;arrFleksoP_low[4][500]=178.25;arrFleksoP_low[4][1000]=169.4;var arrShelkoP=new Array();arrShelkoP[1]=new Array();arrShelkoP[1][100]=52.59;arrShelkoP[1][200]=37.19;arrShelkoP[1][300]=28.29;arrShelkoP[1][500]=20.89;arrShelkoP[1][1000]=14.79;arrShelkoP[1][2000]=12.29;arrShelkoP[1][3000]=11.09;arrShelkoP[1][4000]=10.29;arrShelkoP[1][5000]=9.49;arrShelkoP[2]=new Array();arrShelkoP[2][100]=88.59;arrShelkoP[2][200]=60.39;arrShelkoP[2][300]=43.69;arrShelkoP[2][500]=31.79;arrShelkoP[2][1000]=21.49;arrShelkoP[2][2000]=16.89;arrShelkoP[2][3000]=14.99;arrShelkoP[2][4000]=13.69;arrShelkoP[2][5000]=12.59;arrShelkoP[3]=new Array();arrShelkoP[3][100]=120.59;arrShelkoP[3][200]=81.19;arrShelkoP[3][300]=57.59;arrShelkoP[3][500]=41.79;arrShelkoP[3][1000]=27.69;arrShelkoP[3][2000]=21.19;arrShelkoP[3][3000]=18.69;arrShelkoP[3][4000]=16.99;arrShelkoP[3][5000]=15.49;arrShelkoP[4]=new Array();arrShelkoP[4][100]=148.59;arrShelkoP[4][200]=99.69;arrShelkoP[4][300]=69.99;arrShelkoP[4][500]=50.89;arrShelkoP[4][1000]=33.49;arrShelkoP[4][2000]=25.19;arrShelkoP[4][3000]=22.19;arrShelkoP[4][4000]=20.09;arrShelkoP[4][5000]=18.29; 
+	
+	
+	var dialog;var form;var checkout;var send_to_me;var anonymous="Анонимус";window.addEvent("domready",function(){dialog=new MUX.Dialog({showHeader:"invisible",modal:true,loader:false,autoOpen:false,buttons:[{title:"OK",click:"close"}]});form=$("reutersilk-form");checkout=$("checkout");var a=$("fade");send_to_me=$("send-to-me");checkout.set("morph",{duration:0,transition:"quad:in",fps:60,unit:"%"});checkout.fade("out").morph({display:["block","none"],opacity:["0","100"]});a.set("morph",{duration:0,transition:"quad:in",fps:60,unit:"%"});a.fade("out").morph({display:["block","none"],opacity:["0","100"]});$("send_this").addEvent("click",function(){var b=checkout.getStyle("display");checkout.set("morph",{duration:0,transition:"quad:in",fps:60,unit:"%"});if(b=="none"){checkout.fade("in").morph({display:["none","block"],opacity:["100","0"]});a.fade("in").morph({display:["none","block"],opacity:["100","0"]})}else{checkout.fade("out").morph({display:["block","none"],opacity:["0","100"]});a.fade("out").morph({display:["block","none"],opacity:["0","100"]})}});$("form-submit").addEvent("click",function(){if(!document.formvalidator.isValid(form)){checkout.set("morph",{duration:200,transition:"cubic:out",fps:60,unit:"px"});checkout.morph({marginLeft:["-105","-115"]});checkout.morph({marginLeft:["-115","-95"]});checkout.morph({marginLeft:["-95","-105"]});$("please").addClass("please-bold");return false}else{form.submit()}});$$("#form-submit-cancel","#fade").addEvent("click",function(){checkout.set("morph",{duration:0,transition:"quad:in",fps:60,unit:"%"});checkout.fade("out").morph({display:["block","none"],opacity:["0","100"]});a.fade("out").morph({display:["block","none"],opacity:["0","100"]})});if($("form-submit-to-me")){$("form-submit-to-me").addEvent("click",function(){form.elements["eaddr[0]"].value=$("eaddr-to-me").get("value");if(form.elements["yourname[0]"].value==""){form.elements["yourname[0]"].value=anonymous}form.elements["just_email[0]"].value=1;if(!document.formvalidator.isValid(form)){send_to_me.set("morph",{duration:200,transition:"cubic:out",fps:60,unit:"px"});send_to_me.morph({marginLeft:["-105","-115"]});send_to_me.morph({marginLeft:["-115","-95"]});send_to_me.morph({marginLeft:["-95","-105"]});return false}else{form.submit()}})}if($("btn_send_to_me")){$("btn_send_to_me").addEvent("click",function(){var b=$("send-to-me").getStyle("display");send_to_me.set("morph",{duration:0,transition:"quad:in",fps:60,unit:"%"});if(b=="none"){send_to_me.fade("in").morph({display:["none","block"],opacity:["100","0"]});a.fade("in").morph({display:["none","block"],opacity:["100","0"]})}else{send_to_me.fade("out").morph({display:["block","none"],opacity:["0","100"]});a.fade("out").morph({display:["block","none"],opacity:["0","100"]})}})}if($("form-submit-cancel-to-me")){$$("#form-submit-cancel-to-me").addEvent("click",function(){send_to_me.set("morph",{duration:0,transition:"quad:in",fps:60,unit:"%"});send_to_me.fade("out").morph({display:["block","none"],opacity:["0","100"]});a.fade("out").morph({display:["block","none"],opacity:["0","100"]});if($("yourname").getProperty("value")==anonymous){$("yourname").setProperty("value","")}})}$$("#copies","#total_colors","#size","#density","#color").addEvent("change",function(){calculate_reutershelk()});$("raster").addEvent("click",function(){var b=(this.checked)?1:0;this.set("value",b);calculate_reutershelk()});calculate_reutershelk()});function calculate_reutershelk(){var c=parseInt($("copies")[$("copies").selectedIndex].getProperty("nvalue"));var e=parseInt($("total_colors")[$("total_colors").selectedIndex].getProperty("nvalue"));var k=parseFloat($("size")[$("size").selectedIndex].getProperty("nvalue"));var h=parseFloat($("density")[$("density").selectedIndex].getProperty("nvalue"));var d=parseFloat($("color")[$("color").selectedIndex].getProperty("nvalue"));var g=($("raster").checked)?0.35:0;var a=((arrShelkoP[e][c]+k+h+d)*(1+g)).toFixed(2);var b=(a*c).toFixed(2);$("packet_price_html").innerHTML=numberFormat(a);$("total_price_html").innerHTML=numberFormat(b);$("packet_price").setProperty("value",a);$("total_price").setProperty("value",b);if($("discount_html")){var j=Discount3[c];var i=(a*(100-j)/100).toFixed(2);var f=(b*(100-j)/100).toFixed(2);if(!isNaN(i)){$("discount").setProperty("value",j);$("packet_price_discount").setProperty("value",i);$("total_price_discount").setProperty("value",f);$("discount_html").innerHTML=""+j;$("packet_price_discount_html").innerHTML=""+numberFormat(i);$("total_price_discount_html").innerHTML=""+numberFormat(f);$("discount_txt").innerHTML=""+j;$("packet_txt_discount_packet_price").innerHTML=""+numberFormat(i);$("packet_txt_discount_total_price").innerHTML=""+numberFormat(f);$("table-discount").setStyle("display","block")}else{$("packet_price_discount").setProperty("value",0);$("total_price_discount").setProperty("value",0);$("table-discount").setStyle("display","none")}}$("packet_txt_copies").innerHTML=""+c;$("packet_txt_total_colors").innerHTML=""+e;$("packet_txt_size").innerHTML=$("size")[$("size").selectedIndex].getProperty("text");$("packet_txt_density").innerHTML=$("density")[$("density").selectedIndex].getProperty("text");$("packet_txt_color").innerHTML=$("color")[$("color").selectedIndex].getProperty("text");$("packet_txt_raster").innerHTML=(g!=0)?"Да":"Нет";$("packet_txt_packet_price").innerHTML=""+numberFormat(a);$("packet_txt_total_price").innerHTML=""+numberFormat(b)};
+	
+	
+	document.addEvent("domready",function(){$("fixed-menu").set("morph",{duration:0,transition:"quad:in",fps:60,unit:"%"});$("scroller").set("morph",{duration:0,transition:"quart:in",fps:60,unit:"%"});if($("fixed-search")){$("fixed-search").set("morph",{duration:0,transition:"quad:in",fps:60,unit:"%"})}$("fixed-message").set("morph",{duration:0,transition:"quad:in",fps:60,unit:"%"});$("fixed-callback").set("morph",{duration:0,transition:"quad:in",fps:60,unit:"%"});if($("fixed-search")){$("fixed-icon-search").addEvent("click",function(){$("fixed-search").fade("in").morph({display:["none","block"],opacity:["100","0"]});$("fixed-message").fade("out").morph({display:["block","none"],opacity:["0","100"]});$("fixed-callback").fade("out").morph({display:["block","none"],opacity:["0","100"]})})}if($("fixed-search")){$("hide-search").addEvent("click",function(){$("fixed-search").fade("out").morph({display:["block","none"],opacity:["0","100"]})})}$("fixed-icon-message").addEvent("click",function(){$("fixed-message").fade("in").morph({display:["none","block"],opacity:["100","0"]});if($("fixed-search")){$("fixed-search").fade("out").morph({display:["block","none"],opacity:["0","100"]})}$("fixed-callback").fade("out").morph({display:["block","none"],opacity:["0","100"]})});$("hide-message").addEvent("click",function(){$("fixed-message").fade("out").morph({display:["block","none"],opacity:["0","100"]})});$("fixed-icon-callback").addEvent("click",function(){$("fixed-callback").fade("in").morph({display:["none","block"],opacity:["100","0"]});if($("fixed-search")){$("fixed-search").fade("out").morph({display:["block","none"],opacity:["0","100"]})}$("fixed-message").fade("out").morph({display:["block","none"],opacity:["0","100"]})});$("hide-callback").addEvent("click",function(){$("fixed-callback").fade("out").morph({display:["block","none"],opacity:["0","100"]})});$("scroller").addEvent("click",function(){new Fx.Scroll(window).toTop()});var a=new MUX.Dialog({showHeader:true,modal:false,loader:false,autoOpen:false,buttons:[{title:"OK",click:"close"}]});var b=new MUX.Dialog({showHeader:true,modal:false,loader:false,autoOpen:false,buttons:[{title:"OK",click:"close"}]});$("callback-form-submit").addEvent("click",function(c){c.stop();if(!document.formvalidator.isValid($("callback-form-fixed"))){a.options.title="Внимание!";a.options.content=new Element("p",{html:"Пожалуйста, укажите Ваше имя и телефон."});a.options.showHeader="invisible";a.options.modal=true;a.open();return false}else{$("callback-form-fixed").set("send",{method:"post",url:"index.php",onSuccess:function(d){$("fixed-callback").fade("out").morph({display:["block","none"],opacity:["0","100"]});a.options.title="Заказ обратного звонка";a.options.showHeader=true;a.options.content=new Element("p",{html:d});a.open()},onFailure:function(d){$("fixed-callback").fade("out").morph({display:["block","none"],opacity:["0","100"]})}}).send()}});$("msg-form-submit").addEvent("click",function(c){c.stop();if(!document.formvalidator.isValid($("msg-form-fixed"))){b.options.title="Внимание!";b.options.content=new Element("p",{html:"Пожалуйста, укажите Ваше имя и e-mail."});b.options.showHeader="invisible";b.options.modal=true;b.open();return false}else{$("msg-form-fixed").set("send",{method:"post",url:"index.php",onSuccess:function(d){$("fixed-message").fade("out").morph({display:["block","none"],opacity:["0","100"]});b.options.title="Отправка сообщений";b.options.showHeader=true;b.options.content=new Element("p",{html:d});b.open()},onFailure:function(d){$("fixed-message").fade("out").morph({display:["block","none"],opacity:["0","100"]})}}).send()}})});window.addEvent("scroll",function(){getFixed()});function getFixed(){scroll_active=$("scroll-active").value.toInt();if(!scroll_active&&window.pageYOffset>100){$("scroll-active").set("value",1);$("fixed-menu").fade("in").morph({display:["none","block"],opacity:["100","0"]});$("scroller").fade("in").morph({display:["none","block"],opacity:["100","0"]})}else{if(scroll_active&&window.pageYOffset<=100){$("scroll-active").set("value",0);$("fixed-message").set("morph",{duration:0,transition:"quad:in",fps:60,unit:"%"});$("fixed-callback").set("morph",{duration:0,transition:"quad:in",fps:60,unit:"%"});$("fixed-callback").fade("out").morph({opacity:["0","100"]});$("fixed-message").fade("out").morph({display:["block","none"],opacity:["0","100"]});$("fixed-menu").fade("out").morph({opacity:["0","100"]});$("scroller").fade("out").morph({opacity:["0","100"]})}}}function numberFormat(b){b+="";x=b.split(".");x1=x[0];x2=x.length>1?"."+x[1]:"";var a=/(\d+)(\d{3})/;while(a.test(x1)){x1=x1.replace(a,"$1 $2")}return x1+x2};
+	
+	
+	MUX=window.MUX||{};MUX.Dialog=new Class({Implements:[Options,Events],options:{title:"",modal:true,resizable:false,closable:true,autoOpen:true,showHeader:true,showFooter:"auto",size:{},position:{left:"center",top:"auto"},loader:"auto",buttons:[],defaultButton:undefined},zIndex:10001,initialize:function(d){this.setOptions(d);var c=this;this.openOnContentLoad=false;if(this.options.modal){this.modalOverlay=new Element("div",{"class":"mux-modal-overlay"})}this.box=new Element("div",{"class":"mux-dialog-box",tabIndex:-1});this.box.innerHTML='<div class="mux-dialog-header"><span class="mux-dialog-header-dummy-title">&nbsp;</span><span class="mux-dialog-header-title"></span><span class="mux-dialog-header-close"></span></div><div class="mux-dialog-dummy-header"></div><div class="mux-dialog-content"></div><div class="mux-dialog-footer"><div class="mux-dialog-footer-border"></div><div class="mux-dialog-footer-buttons"></div></div><div class="mux-dialog-resize-icon mux-hidden"></div>';this.header=this.box.getElement(".mux-dialog-header");this.content=this.box.getElement(".mux-dialog-content");this.footer=this.box.getElement(".mux-dialog-footer");if(this.options.closable){this.header.getElement(".mux-dialog-header-close").addEvents({click:function(h){h.stop();c.close()},mousedown:function(h){h.stopPropagation()}});this.box.addEvent("keydown",function(h){if(h.key==="esc"){h.stop();c.close()}})}else{this.header.getElement(".mux-dialog-header-close").destroy()}if(this.box.addEventListener){this.box.addEventListener("focus",function(h){this.addClass("mux-dialog-focused");c.moveToTop()},true);this.box.addEventListener("blur",function(h){this.removeClass("mux-dialog-focused")},true)}else{this.box.addEvent("mousedown",function(h){this.addClass("mux-dialog-focused");c.moveToTop()})}if(this.options.showHeader===true){}else{if(this.options.showHeader==="invisible"){this.header.addClass("mux-dialog-header-invisible");this.content.addClass("mux-dialog-header-invisible")}else{this.header.addClass("mux-hidden")}}this.header.addEvents({mousedown:this._dragStart.bind(this),selectstart:function(h){h.preventDefault()}});this.header.getElement(".mux-dialog-header-title").set("text",this.options.title);if(this.options.resizable){if(this.options.size.x){this.content.setStyle("width",this.options.size.x)}if(this.options.size.y){this.content.setStyle("height",this.options.size.y)}}if(typeOf(this.options.content)==="string"){new Request.HTML({url:this.options.content,onFailure:function(h){c.options.content=new Element("p",{html:"Error loading content. Try to reopen this dialog."});if(c.openOnContentLoad){c.open();c.openOnContentLoad=false}},onSuccess:function(j,h,k,i){c.options.content=j;if(c.openOnContentLoad){c.open();c.openOnContentLoad=false}}}).get()}var b=this.footer.getElement(".mux-dialog-footer-buttons");if(MUX.Loader&&(this.options.loader==="auto"||this.options.loader==="manual")){var g=MUX.Loader.Circles||MUX.Loader.Well||MUX.Loader.Radar||MUX.Loader.Bar;this.loader=new g({delay:70,mode:"in"});$(this.loader).inject(new Element("li.mux-dialog-loader").inject(b))}if(this.options.showFooter==="auto"){if(!this.options.buttons.length){this.footer.addClass("mux-hidden")}}else{if(this.options.showFooter!==true){this.footer.addClass("mux-hidden")}}this.buttons=[];if(this.options.buttons.length){for(var f=0;f<this.options.buttons.length;f++){if(this.options.buttons[f].click==="close"){var a=this.close.bind(this,0)}else{if(this.options.buttons[f].click==="submit"){var a=function(h){if(c.loader&&c.options.loader==="auto"){c.loader.start()}c.fireEvent("submit")}}else{var a=this.options.buttons[f].click}}var e=new MUX.Button({title:this.options.buttons[f].title,style:this.options.buttons[f].style?this.options.buttons[f].style:"auto",click:a,context:this});if(Browser.safari){e.elem.addEvents({mousedown:function(){c.buttonIsPressed=true},click:function(){c.buttonIsPressed=false;c.box.focus()},mouseleave:function(h){if(c.buttonIsPressed){c.buttonIsPressed=false;c.box.focus()}}})}e.elem.inject(b);this.buttons[f]=e}}if(typeof this.options.defaultButton==="number"||typeof this.options.defaultButton==="string"){this.content.addEvent("keydown",function(h){if(h.key==="enter"){h.returnValue=false;c.buttons[c.options.defaultButton].fireEvent("click")}})}if(this.options.resizable){this.box.getElement(".mux-dialog-resize-icon").removeClass("mux-hidden").addEvent("mousedown",function(h){c._resizeStart(h)});this.content.setStyle("overflow","auto")}this.firstOpen=true;if(this.options.autoOpen){this.open()}return this},toElement:function(){return this.box},open:function(){if(typeof this.options.content==="string"){this.openOnContentLoad=true;return}if(this.options.modal&&this.modalOverlay){this.modalOverlay.inject(document.body)}this.box.addClass("mux-invisible");this.box.inject(document.body);if(this.firstOpen){this.content.adopt(this.options.content);this.content.setStyles({"margin-top":this.header.getSize().y,"margin-bottom":this.footer.getSize().y});if(this.options.resizable){this.content.setStyles({width:this.content.getStyle("width"),height:this.content.getStyle("height")});this.box.setStyles({width:this.box.getStyle("width"),height:this.box.getStyle("height")})}}var c={preventDefault:function(){this.doNotOpen=true}};this.fireEvent("open",c);if(c.doNotOpen){this.close();return}this.firstOpen=false;this.moveToTop().position();this.box.removeClass("mux-invisible").fireEvent("mousedown");var d=false;var b=this.content.getElements("textarea:not([disabled]), input:not([disabled]), select:not([disabled])");for(var a=0;a<b.length&&!d;a++){if(b[a].isVisible()){b[a].focus();d=true}}if(!d){this.box.focus()}return this},close:function(e){if(e){var c=this;this.box.set("tween",{onComplete:function(){c.close()}});(function(){c.box.fade("out")}).delay(e);return}if(this.loader){this.loader.stop()}this.box.dispose();if(this.options.modal&&this.modalOverlay){this.modalOverlay.dispose()}var b=null,a=0;var d=$(document.body).getElements(".mux-dialog-box");for(var f=0;f<d.length;f++){var g=d[f].getStyle("z-index");if(g>a){a=g;b=d[f]}}if(b){b.focus()}this.fireEvent("close")},position:function(){var e=0,d=0;var a=this.box.getSize();var b=$(window).getSize();var c=b.y/2-a.y/2;if(this.options.position.top==="auto"){e=Math.min(100,c)}else{if(this.options.position.top==="center"){e=c}else{e=this.options.position.top}}if(this.options.position.left==="center"){d=b.x/2-a.x/2}else{d=this.options.position.left}e=Math.max(0,Math.round(e));d=Math.max(0,Math.round(d));this.box.setPosition({x:d,y:e});return this},moveToTop:function(){if(this.box.getStyle("z-index")<MUX.Dialog.prototype.zIndex){MUX.Dialog.prototype.zIndex+=1;this.box.setStyle("z-index",MUX.Dialog.prototype.zIndex);if(this.options.modal&&this.modalOverlay){this.modalOverlay.setStyle("z-index",MUX.Dialog.prototype.zIndex)}}return this},_resizeStart:function(d){if(d.rightClick){return}d.preventDefault();var b=this;var a=this.box.getPosition();var c=$(window).getSize();MUX.Dialog.currentDialogParams={box:this.box,content:this.content,mouse:{x:d.client.x,y:d.client.y},sizeLimits:{minX:this.box.getStyle("min-width").toInt()+1,minY:this.box.getStyle("min-height").toInt()+1,maxX:c.x-a.x-this.box.getStyle("border-width").toInt()*2,maxY:c.y-a.y-this.box.getStyle("border-width").toInt()*2},contentDiff:{x:this.box.getStyle("width").toInt()-this.content.getStyle("width").toInt(),y:this.box.getStyle("height").toInt()-this.content.getStyle("height").toInt()}};if(Browser.ie){new MUX.Dialog({modal:false,showHeader:this.options.showHeader,showFooter:this.options.showFooter===true||(this.options.showFooter==="auto"&&this.buttons.length),onOpen:function(e){e.preventDefault();MUX.Dialog.currentDialogParams.sizeLimits.minX=this.box.getSize().x;MUX.Dialog.currentDialogParams.sizeLimits.minY=this.box.getSize().y}})}$(document).addEvents({mousemove:MUX.Dialog._resizing,mouseup:MUX.Dialog._resizeEnd})},_dragStart:function(a){if(a.rightClick){return}MUX.Dialog.currentDialogParams={box:this.box,mouse:{x:a.client.x,y:a.client.y},browser:$(window).getSize()};$(document).addEvents({mousemove:MUX.Dialog._dragMoving,mouseup:MUX.Dialog._dragEnd})}});MUX.Dialog._resizing=function(c){c.preventDefault();var e=MUX.Dialog.currentDialogParams;var b={x:e.box.clientWidth,y:e.box.clientHeight};var d={x:c.client.x-e.mouse.x,y:c.client.y-e.mouse.y};var a={x:b.x+d.x,y:b.y+d.y};e.mouse={x:c.client.x,y:c.client.y};if(a.x<=e.sizeLimits.minX){e.mouse.x-=a.x-e.sizeLimits.minX;a.x=e.sizeLimits.minX}if(a.y<=e.sizeLimits.minY){e.mouse.y-=a.y-e.sizeLimits.minY;a.y=e.sizeLimits.minY}if(a.x>e.sizeLimits.maxX){e.mouse.x-=a.x-e.sizeLimits.maxX;a.x=e.sizeLimits.maxX}if(a.y>e.sizeLimits.maxY){e.mouse.y-=a.y-e.sizeLimits.maxY;a.y=e.sizeLimits.maxY}e.box.setStyles({width:a.x,height:a.y});e.content.setStyles({width:a.x-e.contentDiff.x,height:a.y-e.contentDiff.y})};MUX.Dialog._resizeEnd=function(a){MUX.Dialog.currentDialogParams={};$(document).removeEvents({mousemove:MUX.Dialog._resizing,mouseup:MUX.Dialog._resizeEnd})};MUX.Dialog._dragMoving=function(c){c.preventDefault();var d=MUX.Dialog.currentDialogParams;d.box.addClass("mux-dialog-moving");var e=d.box.getCoordinates();var b={x:e.left+c.client.x-d.mouse.x,y:e.top+c.client.y-d.mouse.y};d.mouse={x:c.client.x,y:c.client.y};var a={minX:0,minY:0,maxX:d.browser.x-e.width,maxY:d.browser.y-e.height};if(b.y<a.minY){d.mouse.y-=b.y-a.minY;b.y=a.minY}if(b.x>a.maxX){d.mouse.x-=b.x-a.maxX;b.x=a.maxX}d.box.setStyles({left:b.x,top:b.y})};MUX.Dialog._dragEnd=function(a){MUX.Dialog.currentDialogParams.box.removeClass("mux-dialog-moving");MUX.Dialog.currentDialogParams={};$(document).removeEvents({mousemove:MUX.Dialog._dragMoving,mouseup:MUX.Dialog._dragEnd})};MUX.Dialog.getButtonHandler=function(a,b,c){return function(d){a["buttonClick"+b]=c;a["buttonClick"+b](d)}};MUX.Button=new Class({Implements:Options,options:{title:"",click:null,context:null,style:"auto"},initialize:function(b){this.setOptions(b);this.elem=new Element("button",{role:"button","class":"mux-button"});var a=this;var c=new Element("span",{"class":"mux-button-icon"});var d=new Element("span",{"class":"mux-button-title"});d.set("text",this.options.title);this.elem.adopt([c,d]);if(this.options.style==="ellipse"){this.elem.addClass("mux-button-ellipse")}else{if(this.options.style==="rectangle"){this.elem.addClass("mux-button-rectangle")}else{if(this.options.style==="link"){this.elem.addClass("mux-button-link")}else{if(this.options.style==="auto"){if(Browser.Platform.mac){this.elem.addClass("mux-button-ellipse")}else{if(!Browser.ie||Browser.version>8){this.elem.addClass("mux-button-rectangle")}}}}}}if(this.options.click){if(this.options.context){this.options.click=this.options.click.bind(this.options.context)}this.elem.addEvent("click",this.options.click)}},toElement:function(){return this.elem}});
+	
+	
+	</script>
+  
+  
+  
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<div id="fixed-menu" style="display:none" height="0px">
+
+	<table cellpadding="0" cellspacing="0" border="0">
+		<tr>
+ 		<td>&nbsp;</td>
+ 		<td style="width:960px">
+<table cellpadding="0" cellspacing="0" border="0">
+		<tr>
+ 		
+ 		
+ 	
+ 		
+ 	
+ 		
+ 		<td class="fixed-contacts-icons">
+
+	  		<div id="fixed-icon-message" class="fixed-icon">
+	  		</div>
+	  		
+
+  <div id="fixed-message" class="fixed-form" style="display:none;">
+    <div id="hide-message" class="arrow-hide"></div>
+    <form>
+
+      
+            
+     
+        <button id="msg-form-submit" type="submit" class="content-button">Отправить</button>
+
+           </form>
+</div>
+  
+ 		</td>
+ 		
+ 		<td class="fixed-contacts-phones">
+   
+
+
+
+  		</td>
+ 		
+ 		<td class="fixed-callback">
+   <div id="fixed-icon-callback"></div>
+<div id="fixed-callback" class="fixed-form" style="display:none;">
+    
+    
+    <div id="hide-callback" class="arrow-hide"></div>
+
+  
+                
+    
+
+        <button id="callback-form-submit"></button>
+
+        
+   
+</div>
+
+  		</td>
+</tr>
+</table>
+</td>
+ 		
+ 		<td>&nbsp;</td>
+	</tr>
+  </table>
+  
+</div>
+
+
+  
+  <!-- CONTENT START -->
+<div id="content">
+
+  <div id="contall">
+        
+
+
+      
+
+
+    
+
+<table style="width: 100%;" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td align="left" valign="top" width="100%">
+<h1>Онлайн-калькулятор</h1>
+<h2 class="h2-after-h1">Расчет стоимости изготовления полиэтиленовых пакетов «рейтер» с трафаретной печатью малым тиражом</h2>
+<p><strong>Пакет с вырубной укрепленной ручкой и донной складкой<br />Метод печати:</strong> шелкография (трафаретная печать)<br /><strong>Материал:</strong> полиэтилен высокого давления ПВД<br /><strong>Максимальный размер изображения:</strong> 30х30 см<br /><strong>Малые тиражи:</strong> от 100 пакетов (от 5000 пакетов - флексопечать)<br /><strong>Срок изготовления:</strong> 1,5 - 2 недели</p>
+</td>
+<td style="padding-left: 10px; padding-top: 40px;" valign="top"><img alt="" src="images/i/calc/c-2.3-big.png" width="150" /></td>
+</tr>
+</tbody>
+</table>
+<hr style="color: #2e466f">
+
+
+
+<table cellpadding="0" cellspacing="0" border="0" class="calc-table">
+<col class="calc-col1" />
+<col class="calc-col2" />
+
+    <tr>
+        <td>
+                        Тираж, экземпляров            <span class="tooltip"><img src="images/i/ask15.png" width="15" height="15" border="0" alt="Полиэтилен Суперконцентрат" /><span class="classic"><strong>Обычно от 100 до 2000 экз.</strong>
+  <p>Если Вам нужно 3000 и более пакетов, дешевле изготовить их, применив полностью автоматизированную технологию производства с печатью методом флексографии.</p>
+</span></span>        </td>
+        <td>
+            <select id="copies" 
+                            name= "copies[0]"  style="width:125px">
+<option value='115' nvalue='100' >100</option>
+<option value='116' nvalue='200' >200</option>
+<option value='117' nvalue='300' >300</option>
+<option value='118' nvalue='500' >500</option>
+<option value='119' nvalue='1000'  selected="selected" >1000</option>
+<option value='120' nvalue='2000' >2000</option>
+<option value='121' nvalue='3000' >3000</option>
+<option value='122' nvalue='4000' >4000</option>
+<option value='123' nvalue='5000' >5000</option>
+</select>  
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+                        Кол-во цветов печати                    </td>
+        <td>
+            <select id="total_colors" 
+                            name= "total_colors[0]"  style="width:125px">
+<option value='124' nvalue='1'  selected="selected" >1</option>
+<option value='125' nvalue='2' >2</option>
+<option value='126' nvalue='3' >3</option>
+<option value='127' nvalue='4' >4</option>
+</select>           <br/><sup>Суммарно на двух сторонах</sup>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+                        Размер пакета, см                    </td>
+        <td>
+            <select id="size" 
+                            name= "size[0]"  style="width:125px">
+<option value='128' nvalue='-0.50' >20x30</option>
+<option value='129' nvalue='-0.25' >30x40</option>
+<option value='130' nvalue='0'  selected="selected" >40x50</option>
+<option value='131' nvalue='2.90' >50x60</option>
+<option value='132' nvalue='2.90' >60x50</option>
+<option value='133' nvalue='5.90' >70x60</option>
+</select>     
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+                        Толщина полиэтилена, мкм                    </td>
+        <td>
+            <select id="density" 
+                            name= "density[0]"  style="width:125px">
+<option value='134' nvalue='0'  selected="selected" >50</option>
+<option value='135' nvalue='1.40' >60</option>
+<option value='136' nvalue='1.90' >70</option>
+<option value='137' nvalue='3.40' >80</option>
+<option value='138' nvalue='4.90' >100</option>
+</select>        </td>
+    </tr>
+
+    <tr>
+        <td>
+                        Цвет полиэтилена                    </td>
+        <td>
+            <select id="color" 
+                            name= "color[0]"  style="width:125px">
+<option value='153' nvalue='0' >белый</option>
+<option value='154' nvalue='1.90' >черный</option>
+<option value='155' nvalue='1.90' >темно-синий</option>
+<option value='156' nvalue='1.90' >голубой</option>
+<option value='157' nvalue='1.90' >зеленый</option>
+<option value='158' nvalue='1.90' >темно-зеленый</option>
+<option value='159' nvalue='1.90' >бирюзовый</option>
+<option value='160' nvalue='1.90' >красный</option>
+<option value='161' nvalue='1.90' >желтый</option>
+<option value='162' nvalue='1.90' >оранжевый</option>
+<option value='163' nvalue='1.90' >светло-бежевый</option>
+<option value='164' nvalue='1.90' >серебряный</option>
+</select>        </td>
+    </tr>
+
+    <tr>
+        <td>
+                        Использование растра (полутона)                    </td>
+        <td>
+            <input 	type="checkbox"
+       						id="raster"
+           					name="raster[0]"
+                            value=""  
+                            class="" />         </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <hr style="color: #2e466f">
+        </td>
+    </tr>
+
+    <tr class="bigger-font">
+        <td>
+                                    Цена за 1 экз.        </td>
+        <td class="info-input">
+                        <span id="packet_price_html"></span>&nbsp;<em class="rur">p</em>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+                        Стоимость всего тиража        </td>
+        <td class="info-input">
+            <span id="total_price_html"></span>&nbsp;<em class="rur">p</em>
+        </td>
+    </tr>
+
+</table>
+
+<a href="javascript:void(0);" id="send_this" ></a>
+<a href="javascript:void(0);" id="btn_send_to_me"></a>
+
+<br />
+
+<div id="fade" style="display:none"></div>
+
+<div id="checkout" style="display:none">
+<div class="checkout-abs">
+<div class="checkout-box">
+    <div id="textview">
+	<table cellpadding="0" cellspacing="0" border="0" class="calc-table">
+	<col class="calc-col1" />
+	<col class="calc-col2" />
+	<tr><td colspan="2"><h2>Заказ пакетов с вырубной ручкой (шелкография)</h2></td></tr>
+	<tr><td>Тираж:</td><td><span id="packet_txt_copies" style="font-weight: bold"></span> экземпляров</td></tr>
+	<tr><td>Кол-во цветов печати:</td><td><span id="packet_txt_total_colors" style="font-weight: bold"></span></td></tr>
+	<tr><td>Размеры пакета:</td><td><span id="packet_txt_size" style="font-weight: bold"></span> см </td></tr> 
+	<tr><td>Толщина полиэтилена:</td><td><span id="packet_txt_density" style="font-weight: bold"></span> микрон</td></tr>
+	<tr><td>Цвет полиэтилена:</td><td><span id="packet_txt_color" style="font-weight: bold"></span> </td></tr>
+	<tr><td>Использование растра (полутона)</td><td><span id="packet_txt_raster" style="font-weight: bold"></span></td></tr>
+<tr><td colspan="2"><hr color="white"/></td></tr>
+	<tr><td>Цена за 1 пакет:</td><td><span id="packet_txt_packet_price" style="font-weight: bold"></span></span>&nbsp;<em class="rur">p</em></td></tr> 
+	<tr><td>Стоимость всего тиража:</td><td><span id="packet_txt_total_price" style="font-weight: bold"></span></span>&nbsp;<em class="rur">p</em></td></tr>
+<tr><td colspan="2"><hr color="white"/></td></tr>
+	</table>
+</div>
+
+
+
+<a id="form-submit" class="button-submit" href="javascript:void(0)"></a>
+
+	
+	   
+    
+</div>
+</div>
+</div>
+</form>
+
+
+
+
+                   
+   </div>
+   </article>
+    </div><!--contfull-->
+  </div><!--contall-->
+ 
+  </div><!--content-->
+  <!-- CONTENT END -->  
+  
+  
+
+
+
+<div id="scroller" class="b-top" style="display: none;"></div>
